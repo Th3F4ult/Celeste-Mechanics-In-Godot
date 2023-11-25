@@ -1,0 +1,57 @@
+[gd_scene load_steps=11 format=3 uid="uid://bq7be4ojysd3b"]
+
+[ext_resource type="Script" path="res://Player.gd" id="1_pb63i"]
+[ext_resource type="Texture2D" uid="uid://diho218vtl6xv" path="res://Godot-Assets/PLAYER/Player_IDLE_0.png" id="2_5mt65"]
+[ext_resource type="Texture2D" uid="uid://sq4s56dvkls1" path="res://Godot-Assets/PLAYER/PLAYER_DIE_-1.png" id="2_gl61n"]
+[ext_resource type="Texture2D" uid="uid://cb6hcuremhal6" path="res://Godot-Assets/PLAYER/PLAYER_DIE_0.png" id="3_2cgd8"]
+[ext_resource type="Texture2D" uid="uid://bde6qrfyg7dvx" path="res://Godot-Assets/PLAYER/PLAYER_DIE_1.png" id="4_q3xlk"]
+[ext_resource type="Texture2D" uid="uid://dtyn6mhqriu6r" path="res://Godot-Assets/PLAYER/PLAYER_DIE_2.png" id="5_03qfj"]
+[ext_resource type="Texture2D" uid="uid://b463wvbwer8u8" path="res://Godot-Assets/PLAYER/PLAYER_DIE_3.png" id="6_xoyip"]
+[ext_resource type="Texture2D" uid="uid://0bhp4ujw0kb4" path="res://Godot-Assets/PLAYER/PLAYER_DIE_4.png" id="7_0m0ij"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qy6g"]
+size = Vector2(16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_l4qd0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_gl61n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_2cgd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_q3xlk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_03qfj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_xoyip")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_0m0ij")
+}],
+"loop": false,
+"name": &"Die",
+"speed": 18.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5mt65")
+}],
+"loop": true,
+"name": &"Idling",
+"speed": 5.0
+}]
+
+[node name="Char" type="CharacterBody2D"]
+script = ExtResource("1_pb63i")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5qy6g")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_l4qd0")
+animation = &"Idling"

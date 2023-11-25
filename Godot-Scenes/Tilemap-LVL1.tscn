@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfb3xt2nlfb3t"]
+
+[ext_resource type="Texture2D" uid="uid://bd3dmsa8xpkvf" path="res://Godot-Assets/Tilemaps/Level_1.png" id="1_6cflw"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kyl5h"]
+texture = ExtResource("1_6cflw")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4.75, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -4.75, -8, 8, -8, 8, 8, -8, 8)
+2:0/0 = 0
+2:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+2:0/0/physics_layer_0/angular_velocity = 0.0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -6.125, -4.75, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_4vm8b"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_kyl5h")
+
+[node name="TileMap" type="TileMap"]
+tile_set = SubResource("TileSet_4vm8b")
+format = 2

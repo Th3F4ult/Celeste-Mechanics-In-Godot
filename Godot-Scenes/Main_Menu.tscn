@@ -1,0 +1,28 @@
+[gd_scene load_steps=2 format=3 uid="uid://1nv2g04rksj7"]
+
+[ext_resource type="Script" path="res://Godot-Scipts/StartListener.gd" id="1_eh57d"]
+
+[node name="Main_Menu_Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eh57d")
+
+[node name="NameText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 20.0
+offset_right = 340.0
+offset_bottom = 47.0
+text = "Totally not a Celeste clone - V0"
+
+[node name="SpaceText" type="RichTextLabel" parent="."]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 58.0
+offset_right = 127.0
+offset_bottom = 82.0
+text = "Space to start!"
