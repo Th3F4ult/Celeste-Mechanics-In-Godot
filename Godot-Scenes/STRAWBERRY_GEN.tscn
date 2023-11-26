@@ -1,0 +1,145 @@
+[gd_scene load_steps=32 format=3 uid="uid://dckopp0wpv5u1"]
+
+[ext_resource type="Script" path="res://Godot-Scipts/StrawberryController.gd" id="1_s5skv"]
+[ext_resource type="Texture2D" uid="uid://dy88ffyebyvpt" path="res://Godot-Assets/Strawb-Get/0.png" id="2_6p2jh"]
+[ext_resource type="Texture2D" uid="uid://bdh6mx2ak3ykl" path="res://Godot-Assets/Strawb/0.png" id="2_f1k4n"]
+[ext_resource type="Texture2D" uid="uid://m1pwiart5cag" path="res://Godot-Assets/Strawb/1.png" id="3_77iqe"]
+[ext_resource type="Texture2D" uid="uid://doj52pd7lenlc" path="res://Godot-Assets/Strawb-Get/1.png" id="3_xucjy"]
+[ext_resource type="Texture2D" uid="uid://b2dbxh4x5n45a" path="res://Godot-Assets/Strawb/2.png" id="4_2131w"]
+[ext_resource type="Texture2D" uid="uid://ydpqsklwfp0i" path="res://Godot-Assets/Strawb-Get/2.png" id="4_si3ej"]
+[ext_resource type="Texture2D" uid="uid://bs4dti4nunuro" path="res://Godot-Assets/Strawb/3.png" id="5_f0vnb"]
+[ext_resource type="Texture2D" uid="uid://eku2tc2m8suj" path="res://Godot-Assets/Strawb-Get/3.png" id="5_wvjmq"]
+[ext_resource type="Texture2D" uid="uid://0q7a6t4sedo" path="res://Godot-Assets/Strawb/4.png" id="6_ejqyo"]
+[ext_resource type="Texture2D" uid="uid://bypu07kkodjrg" path="res://Godot-Assets/Strawb-Get/4.png" id="6_ynpvl"]
+[ext_resource type="Texture2D" uid="uid://dmj3ajwny4h04" path="res://Godot-Assets/Strawb/5.png" id="7_cemw6"]
+[ext_resource type="Texture2D" uid="uid://boet8b6mwrdb2" path="res://Godot-Assets/Strawb-Get/5.png" id="7_dfkpf"]
+[ext_resource type="Texture2D" uid="uid://bu8vu1gyne42k" path="res://Godot-Assets/Strawb-Get/6.png" id="8_3t707"]
+[ext_resource type="Texture2D" uid="uid://c2wnbcitpojb0" path="res://Godot-Assets/Strawb-Get/7.png" id="9_ofsxb"]
+[ext_resource type="Texture2D" uid="uid://pxw75ab84pff" path="res://Godot-Assets/Strawb-Get/8.png" id="10_y5ds0"]
+[ext_resource type="Texture2D" uid="uid://bi76608j5ctap" path="res://Godot-Assets/Strawb-Get/9.png" id="11_yy1s5"]
+[ext_resource type="Texture2D" uid="uid://3lcyehdeow8y" path="res://Godot-Assets/Strawb-Get/10.png" id="12_oa6co"]
+[ext_resource type="Texture2D" uid="uid://b767a6jeaqcep" path="res://Godot-Assets/Strawb-Get/11.png" id="13_gybwl"]
+[ext_resource type="Texture2D" uid="uid://bh6s43c0doc7j" path="res://Godot-Assets/Strawb-Get/12.png" id="14_thooj"]
+[ext_resource type="Texture2D" uid="uid://dlvm36cswutk8" path="res://Godot-Assets/Strawb-Get/13.png" id="15_g1cu4"]
+[ext_resource type="Texture2D" uid="uid://c6tmglys7nlkq" path="res://Godot-Assets/Strawb-Get/14.png" id="16_3iwto"]
+[ext_resource type="Texture2D" uid="uid://dqc2gm0eir40" path="res://Godot-Assets/Strawb-Get/15.png" id="17_ofox1"]
+[ext_resource type="Texture2D" uid="uid://cxnsoe44utkpm" path="res://Godot-Assets/Strawb-Get/16.png" id="18_cu3uy"]
+[ext_resource type="Texture2D" uid="uid://bqycke3kaf2id" path="res://Godot-Assets/Strawb-Get/17.png" id="19_3bt1p"]
+[ext_resource type="Texture2D" uid="uid://bn4uilqyx2mcb" path="res://Godot-Assets/Strawb-Get/18.png" id="20_r2drf"]
+[ext_resource type="Texture2D" uid="uid://dnxhohlnppmjp" path="res://Godot-Assets/Strawb-Get/19.png" id="21_pgrte"]
+[ext_resource type="Texture2D" uid="uid://wsqw23samt8q" path="res://Godot-Assets/Strawb-Get/20.png" id="22_n4opb"]
+[ext_resource type="Texture2D" uid="uid://ce551p475fw5f" path="res://Godot-Assets/Strawb-Get/21.png" id="23_pc4mm"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_uymvw"]
+radius = 6.0
+height = 18.0
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_60scm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6p2jh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_xucjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_si3ej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_wvjmq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ynpvl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_dfkpf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_3t707")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_ofsxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_y5ds0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_yy1s5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_oa6co")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_gybwl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_thooj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_g1cu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_3iwto")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_ofox1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_cu3uy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_3bt1p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_r2drf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_pgrte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_n4opb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_pc4mm")
+}],
+"loop": false,
+"name": &"STRAW_GET",
+"speed": 25.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_f1k4n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_77iqe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2131w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_f0vnb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ejqyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_cemw6")
+}],
+"loop": true,
+"name": &"STRAW_IDLE",
+"speed": 5.0
+}]
+
+[node name="Area2D" type="Area2D"]
+script = ExtResource("1_s5skv")
+
+[node name="StrawberryHitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_uymvw")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1, -1)
+sprite_frames = SubResource("SpriteFrames_60scm")
+animation = &"STRAW_GET"
+
+[connection signal="body_entered" from="." to="." method="_TOUCHED"]
