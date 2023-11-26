@@ -12,8 +12,10 @@ func _on_next_area_horizontal_trigger_body_entered(body):
 		Globals.CamH = Globals.CamH + 1
 		$Char.position.x = $Char.position.x + 20
 		var currentMark = "Markers/C" + str(Globals.CamH).pad_zeros(2)
-		Globals.currentAreaH =+ 1
-		$HITBOXh.position.x =+ 596
+		Globals.currentAreaH = Globals.currentAreaH + 1
+		$HITBOXh.position.x = $HITBOXh.position.x  + 566
+		print("Moved hitbox to ", $HITBOXh.position.x)
+		print(Globals.currentAreaH)
 		# This so we can come back later
 		var marker = get_node(currentMark)
 		print(currentMark)

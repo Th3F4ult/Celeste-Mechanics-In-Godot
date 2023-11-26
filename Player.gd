@@ -42,10 +42,11 @@ func FinishPlaying():
 	if Globals.currentAreaH == 0:
 		position.x = 50
 		position.y = 600
+		print("Respawning at ", position.x)
 	else:
-		position.x = Globals.currentAreaH * 586
+		position.x = Globals.currentAreaH * 600
 		position.y = 600
-		
+		print("Respawning at ", position.x)
 	_ready()
 	gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 	Globals.isDead = false
