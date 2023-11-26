@@ -1,8 +1,9 @@
-[gd_scene load_steps=7 format=3 uid="uid://diqtjiyoulkmf"]
+[gd_scene load_steps=8 format=3 uid="uid://diqtjiyoulkmf"]
 
 [ext_resource type="PackedScene" uid="uid://bq7be4ojysd3b" path="res://Godot-Scenes/Character.tscn" id="1_1apm4"]
 [ext_resource type="PackedScene" uid="uid://cfb3xt2nlfb3t" path="res://Godot-Scenes/Tilemap-LVL1.tscn" id="1_d5nbb"]
 [ext_resource type="Script" path="res://Godot-Scipts/Level_1.gd" id="1_x8nll"]
+[ext_resource type="PackedScene" uid="uid://dckopp0wpv5u1" path="res://Godot-Scenes/STRAWBERRY_GEN.tscn" id="4_ttmwq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vmf58"]
 size = Vector2(3646, 17)
@@ -60,6 +61,15 @@ position = Vector2(864, 489)
 
 [node name="C03" type="Marker2D" parent="Markers"]
 position = Vector2(1440, 489)
+
+[node name="Area2D" parent="." instance=ExtResource("4_ttmwq")]
+position = Vector2(110, 551)
+
+[node name="Area2D3" parent="." instance=ExtResource("4_ttmwq")]
+position = Vector2(1375, 614)
+
+[node name="Area2D2" parent="." instance=ExtResource("4_ttmwq")]
+position = Vector2(743, 638)
 
 [connection signal="body_entered" from="DeathTrigger" to="." method="_on_death_trigger_body_entered"]
 [connection signal="body_entered" from="Next_area_horizontal_trigger" to="." method="_on_next_area_horizontal_trigger_body_entered"]
